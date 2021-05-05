@@ -1,0 +1,60 @@
+The dataset consists of 13 columns 10841 rows.
+The columns in this dataset are namely
+
+App - Contains the name of the App [Non Numeric]
+Category - Each app that belongs to a category is assigned [Categorical]
+Rating - The rating of the app by the user [Numeric]
+Reviews - The no. of reviwes that app recieved from the users [Non Numeric]
+Size - Size of the App [Numeric]
+Installs - No. of installs of app [Numeric]
+Type - Free/Paid [Categorical]
+Price - Exists only if app is Paid Type [Numeric]
+Content Rating - The content of the app it belongs [Categorical]
+Genres - Genre of the App[Categorical]
+Last Updated - Last updated by developers [Numeric]
+Current ver - Current version details [Numeric]
+Andriod ver - ANdriod version it supported [Numeric]
+
+On investing the data
+Step 1 - Checking NA values to avoid garbage predictions and improve performance of the model.
+Step 2 - Removing the Unnecessary variables in the feature space.
+Step 3 - Data Cleaning of available features. 
+
+Step 4 - Exploratory Data Analysis. 
+
+Step 5 - Feature Engineering.
+	1.Encoding Categorical Features( Type, Category , Content Rating )
+	2.Standard Scaling Numerical Features.
+	2.Checking Presence of Correlation among the feature space as it may affect our predictions.
+	(No AutoCorrelation Present)
+	
+Step 6 - Model Building (Linear Regression)
+	1.Train Test Splitting
+	2.Standar scaler fitting and transform for model.
+	3.Fitting Model on Training Set
+	4.Predicting on Testing set.
+	5.Calculating  error metrices
+	RMSE - 50.4%
+Step 7 - Model Building (Logistic Regression)
+	1.Train Test Splitting
+	2.Standar scaler fitting and transform for model.
+	3.Fitting Model on Training Set
+	4.Predicting on Testing set.
+	5.Calculating  error metrices
+	Accuracy  -64.4%
+
+Step 8 - Model Building (Decision Tree Classification)
+	1.Train Test Splitting
+	2.Label Encoding categorical features transform for model.
+	3.Fitting Model on Training Set
+	4.Predicting on Testing set.
+	5.Calculating  error metrices
+	Accuracy  -67.8%
+
+Step 9 - Model Building (Decision Tree Regressor)
+	1.Train Test Splitting
+	2.Label Encoding categorical features transform for model.
+	3.Fitting Model on Training Set
+	4.Predicting on Testing set.
+	5.Calculating  error metrices
+	Accuracy  -48.0%
